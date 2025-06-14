@@ -1,0 +1,8 @@
+<mvc:View controllerName="app.app.controller.home" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true"
+	xmlns="sap.m">
+	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+		<content>
+			<Button text="{i18n>iWantToNavigate}" press="onClick"/>
+		</content>
+	</Page>
+</mvc:View>

@@ -3,6 +3,9 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 	return Controller.extend("app.app.controller.details", {
-		onInit: function () {}
+		onInit: function () {},
+		onNavBack: function () {
+			history.go(-1);
+		}
 	});
 });

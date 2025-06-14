@@ -1,5 +1,5 @@
 <mvc:View controllerName="app.app.controller.details" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-	<Page title="{i18n>title}">
+	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 		<content>
 			<Table id="DetailList" class="sapUiResponsiveMargin" width="auto" items="{/SALES}">
 				<columns>
