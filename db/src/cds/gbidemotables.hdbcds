@@ -1,0 +1,24 @@
+namespace SAP.db.cds;
+
+// Reference external structures
+using SAP.db.cds::GBItypes.StandardTypes;
+
+// GBI_DEMO_SALES
+entity Sales {
+    key id              : Integer generated always as identity(start with 1 increment by 1);
+        YEAR            : Integer;
+        MONTH           : Integer;
+        DAY             : Integer;
+        CUSTOMER_NUMBER : type of StandardTypes.Sstring10;
+        ORDER_NUMBER    : type of StandardTypes.Sstring10;
+        ORDER_ITEM      : type of StandardTypes.Sstring3;
+        PRODUCT         : String(8);
+        SALES_QUANTITY  : Integer;
+        UNIT_OF_MEASURE : type of StandardTypes.Sstring3;
+        REVENUE         : type of StandardTypes.Sdec172;
+        CURRENCY        : type of StandardTypes.Sstring3;
+        DISCOUNT        : type of StandardTypes.Sdec172;
+}
+technical configuration {
+    column store;
+};

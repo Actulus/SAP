@@ -1,0 +1,46 @@
+{
+	"format_version": 1,
+	"imports": [{
+		"target_table": "SAP.db.cds::Sales",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "SAP.db.data::Sales.csv",
+			"has_header": false,
+			"no_data_import": false,
+			"delete_existing_foreign_data": false,
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+			"import_columns": [
+				"YEAR",
+				"MONTH",
+				"DAY",
+				"CUSTOMER_NUMBER",
+				"ORDER_NUMBER",
+				"ORDER_ITEM",
+				"PRODUCT",
+				"SALES_QUANTITY",
+				"UNIT_OF_MEASURE",
+				"REVENUE",
+				"CURRENCY",
+				"DISCOUNT"
+			]
+		},
+		"column_mappings": {
+			"YEAR": 1,
+			"MONTH": 2,
+			"DAY": 3,
+			"CUSTOMER_NUMBER": 4,
+			"ORDER_NUMBER": 5,
+			"ORDER_ITEM": 6,
+			"PRODUCT": 7,
+			"SALES_QUANTITY": 8,
+			"UNIT_OF_MEASURE": 9,
+			"REVENUE": 10,
+			"CURRENCY": 11,
+			"DISCOUNT": 12
+		}
+	}]
+}

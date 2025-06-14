@@ -1,0 +1,3 @@
+service { 
+	"SAP.db.cds::Sales" as "SALES"; 
+}
