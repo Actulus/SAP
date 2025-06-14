@@ -1,0 +1,64 @@
+<mvc:View controllerName="app.app.controller.details" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page title="{i18n>title}">
+		<content>
+			<Table id="DetailList" class="sapUiResponsiveMargin" width="auto" items="{/SALES}">
+				<columns>
+					<Column minScreenWidth="Small" demandPopin="true">
+						<Text text="Year"/>
+					</Column>
+					<Column minScreenWidth="Small" demandPopin="true">
+						<Text text="Month"/>
+					</Column>
+					<Column minScreenWidth="Small" demandPopin="true">
+						<Text text="Day"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Customer Number"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Order Number"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Order Item"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Product"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Sales Quantity"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Unit of Measure"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Revenue"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Currency"/>
+					</Column>
+					<Column minScreenWidth="Small" demandPopin="true" hAlign="End" width="10em">
+						<Text text="Discount"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{YEAR}"/>
+							<Text text="{MONTH}"/>
+							<Text text="{DAY}"/>
+							<Text text="{CUSTOMER_NUMBER}"/>
+							<Text text="{ORDER_NUMBER}"/>
+							<Text text="{ORDER_ITEM}"/>
+							<Text text="{PRODUCT}"/>
+							<Text text="{SALES_QUANTITY}"/>
+							<Text text="{UNIT_OF_MEASURE}"/>
+							<Text text="{REVENUE}"/>
+							<Text text="{CURRENCY}"/>
+							<Text text="{DISCOUNT}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

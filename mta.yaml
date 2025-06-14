@@ -17,6 +17,16 @@ modules:
     requires:
       - name: hdi_db
       - name: db
+  - name: app
+    type: html5
+    path: app
+    requires:
+      - name: odata_api
+        group: destinations
+        properties:
+          name: js_be
+          url: '~{url}'
+          forwardAuthToken: true
 resources:
   - name: hdi_db
     properties:
