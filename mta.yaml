@@ -17,6 +17,7 @@ modules:
     requires:
       - name: hdi_db
       - name: db
+      - name: CONGRESS_LIB
   - name: app
     type: html5
     path: app
@@ -32,3 +33,5 @@ resources:
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
+  - name: CONGRESS_LIB
+    type: org.cloudfoundry.existing-service

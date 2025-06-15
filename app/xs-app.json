@@ -4,5 +4,8 @@
 	"routes": [{
 		"source": "^/Sales.xsodata/.*$",
 		"destination": "js_be"
+	}, {
+		"source": "^/services/.*$",
+		"destination": "js_be"
 	}]
 }
