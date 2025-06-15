@@ -1,0 +1,10 @@
+<mvc:View controllerName="app.app.controller.outbound" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<Page title="{i18n>outboundTitle}" class="sapUiResponsiveContentPadding" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<Label text="{i18n>}"></Label>
+			<SearchField id="searchField" placeholder="{i18n>search_placeholder}" search="onSearch"/>
+			<Carousel id="carousel" class="sapUiContentPadding" loop="true" height="90%"></Carousel>
+		</content>
+	</Page>
+</mvc:View>

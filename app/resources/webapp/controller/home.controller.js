@@ -6,6 +6,10 @@ sap.ui.define([
 		onClick: function () {
 			var routepara = sap.ui.core.UIComponent.getRouterFor(this);
 			routepara.navTo("RouteView2");
+		},
+		onExtClick: function () {
+			var routepara = sap.ui.core.UIComponent.getRouterFor(this);
+			routepara.navTo("RouteView3");
 		}
 	});
 });

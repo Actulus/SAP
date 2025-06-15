@@ -109,6 +109,10 @@
 				"name": "RouteView2",
 				"pattern": "details",
 				"target": "TargetView2"
+			}, {
+				"name": "RouteView3",
+				"pattern": "outbound",
+				"target": "TargetView3"
 			}],
 			"targets": {
 				"TargetView1": {
@@ -117,6 +121,10 @@
 				},
 				"TargetView2": {
 					"viewName": "details",
+					"transition": "show"
+				},
+				"TargetView3": {
+					"viewName": "outbound",
 					"transition": "show"
 				}
 			}
